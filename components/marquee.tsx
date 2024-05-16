@@ -1,9 +1,7 @@
 import Marquee from "react-fast-marquee";
 
 const marqueeImages = [
-    "marquee1.png", 
-    "marquee2.png", 
-    "marquee3.png"
+    "Ungabunga.png", 
 ]
 
 
