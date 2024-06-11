@@ -23,6 +23,12 @@ export default function Navbar(){
         setIsOpen(!isOpen)
     }
 
+    const [hoveredIndex, setHoveredIndex] = useState<number|null>(null)
+
+    const handleHoveredIndex = (index:any) => {
+        setHoveredIndex(index);
+    }
+
 
     if(isOpen === true){
         if (typeof window != 'undefined' && window.document) {
@@ -49,9 +55,11 @@ export default function Navbar(){
                 </div>
                 <div className="hidden 2xl:flex gap-[45px] ">
                     {navigation.map((item, index)=>(
-                        <div key={index}>
+                        <div key={index} onMouseEnter={() => handleHoveredIndex(index)} onMouseLeave={() => handleHoveredIndex(null)}>
                             <Link href={item.href}>
-                                <p className="text-[#EAD19F] hover:text-[#FFCF47] transition-all ease-in-out duration-200">{item.title}</p>
+                                <p className="text-[#EAD19F] hover:text-[#FFCF47] transition-all ease-in-out duration-200"
+                                style={{ textShadow: hoveredIndex === index ? "10px 0px 10px #FFCF47, -10px 0px 10px #FFCF47, 0px 10px 10px #FFCF47, 0px -10px 10px #FFCF47" : ""
+                                }}>{item.title}</p>
                             </Link>
                         </div>
                     ))}
@@ -71,7 +79,7 @@ export default function Navbar(){
                         {navigation.map((item, index)=>(
                             <div key={index}>
                                 <Link href={item.href}>
-                                    <h1 className="text-[#FFCF47]">{item.title}</h1>
+                                    <h1 className="text-[#FFCF47] ">{item.title}</h1>
                                 </Link>
                             </div>
                         ))}

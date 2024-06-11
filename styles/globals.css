@@ -79,6 +79,10 @@ p{
   text-align: center;
 }
 
+.section-text{
+  font-family: "Satoshi-Regular", sans-serif;
+}
+
 .team-wrap:hover .team-text{
   color:#FFCF47;
   transition: all 0.25s;
