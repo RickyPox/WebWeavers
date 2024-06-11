@@ -33,7 +33,7 @@ export default function Benefits(){
                 {benefits.map((benefit, index) => (
                     <div key={index} className="2xl:col-span-2">
                         <h3>{benefit.title}</h3>
-                        <p className="mt-[5px] sm:mt-[10px]">{benefit.text}</p>
+                        <p className="mt-[5px] sm:mt-[10px]"></p>
                     </div>
                 ))}
             </div>
