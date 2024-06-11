@@ -69,7 +69,18 @@ export default function Benefits(){
                 <SectionTitle subtitle="Exclusive" title="Holder Benefits"/>
             </div>
             {/* DESKTOP */}
-            
+            <div className="col-start-1 col-span-5 2xl:col-span-9 2xl:grid 2xl:grid-cols-3 hidden items-center 2xl:gap-[25px] gap-[60px]">
+                {benefits.map((benefit, index) => (
+                    <div key={index} className="flex" onMouseEnter={() => handleHoveredIndex(index)} onMouseLeave={() => handleHoveredIndex(null)} >
+                        <div className=" bg-[#101010] px-[45px] py-[25px] rounded-[10px] flex items-center justify-center gap-[15px]">
+                        <img  src={benefit.img}/>
+                        <h3 className=" transition-all duration-200" style={{
+                        textShadow: hoveredIndex === index ? "10px 0px 10px #FFCF47, -10px 0px 10px #FFCF47, 0px 10px 10px #FFCF47, 0px -10px 10px #FFCF47" : ""
+                    }}>{benefit.title}</h3>
+                        </div>
+                    </div>
+                ))}
+            </div>
 
             {/* MOBILE */}
 
