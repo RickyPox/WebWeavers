@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <link rel="icon" href="/favicon.png" />
-        <title>WebWeavers</title>
+        <title>Web Weavers</title>
       </Head>
       <nav className="mt-[60px]">
         <Navbar></Navbar>

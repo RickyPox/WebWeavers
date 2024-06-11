@@ -8,22 +8,22 @@ export default function JoinTheWeb(){
             </div>
 
             <div className="col-start-1 col-span-1 row-start-3 2xl:row-start-2">
-                <img className="w-full opacity-60 " src="/Ungabunga.png"/>
+                <img className="w-full opacity-60 " src="/Marquee11.gif"/>
             </div>
             <div className="col-start-2 col-span-1 row-start-2  2xl:row-start-1">
-                <img className="w-1/2 opacity-60" src="/Ungabunga.png"/>
+                <img className="w-1/2 opacity-60" src="/Marquee3.gif"/>
             </div>
             <div className="col-start-2 col-span-1 row-start-4 2xl:row-start-3 ">
-                <img className="w-1/2 opacity-60" src="/Ungabunga.png"/>
+                <img className="w-1/2 opacity-60" src="/Marquee13.gif"/>
             </div>
             <div className="col-start-3 col-span-1 row-start-3 2xl:row-start-2">
-                <img className="w-1/2 opacity-60" src="/Ungabunga.png"/>
+                <img className="w-1/2 opacity-60" src="/Marquee6.gif"/>
             </div>
             <div className="col-start-3 col-span-1 row-start-5 2xl:row-start-4">
-                <img className="w-1/2 opacity-60" src="/Ungabunga.png"/>
+                <img className="w-1/2 opacity-60" src="/Marquee10.gif"/>
             </div>
             <div className="col-start-4 col-span-2 row-start-3 row-span-4 2xl:row-start-2 2xl:row-span-3 2xl:col-start-8">
-                <img className="w-full" src="/Ungabunga.png"/>
+                <img className="w-full" src="/Marquee2.gif"/>
             </div>
     </div>
     )
