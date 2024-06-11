@@ -18,22 +18,22 @@ export default function Home() {
       <nav className="mt-[60px]">
         <Navbar></Navbar>
       </nav>
-      <section className="mt-[50vw] sm:mt-[60vw] lg:mt-[60vw] 2xl:mt-[20vw]" id="intro">
+      <section className="mt-[20vw]" id="intro">
         <Intro></Intro>
       </section>
-      <section className="mt-[40vw] sm:mt-[50vw] lg:mt-[50vw] 2xl:mt-[20vw]">
+      <section className="mt-[20vw]">
         <MarqueeSlider></MarqueeSlider>
       </section>
-      <section className="mt-[55vw] sm:mt-[55vw] lg:mt-[50vw] 2xl:mt-[25vw]" id="whoweare">
+      <section className="mt-[25vw]" id="whoweare">
         <WhoWeAre></WhoWeAre>
       </section>
-      <section className="mt-[55vw] sm:mt-[55vw] lg:mt-[35vw] 2xl:mt-[25vw]" id="benefits">
+      <section className="mt-[25vw]" id="benefits">
         <Benefits></Benefits>
       </section>
-      <section className="mt-[55vw] sm:mt-[55vw] lg:mt-[45vw] 2xl:mt-[25vw] " id="jointheweb">
+      <section className="mt-[25vw] " id="jointheweb">
         <JoinTheWeb></JoinTheWeb>
       </section>
-      <section className="mt-[55vw] sm:mt-[55vw] lg:mt-[45vw] 2xl:mt-[25vw] mb-[60px]" id="Footer">
+      <section className="mt-[25vw] mb-[60px]" id="Footer">
         <Footer></Footer>
       </section>
     </div>

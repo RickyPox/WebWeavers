@@ -4,21 +4,24 @@ export default function Benefits(){
 
     const benefits =[
         {
-            title:"Customizable avatars",
-            text:"Update your Moonbird’s appearance based on your wallet’s holdings or achievements within the PROOF ecosystem."
+            title:"Access to Spiderswap premium",
         },
         {
-            title:"Customizable avatars",
-            text:"Update your Moonbird’s appearance based on your wallet’s holdings or achievements within the PROOF ecosystem."
+            title:"Fee discounts",
         },
         {
-            title:"Customizable avatars",
-            text:"Update your Moonbird’s appearance based on your wallet’s holdings or achievements within the PROOF ecosystem."
+            title:"Point multipliers",
         },
         {
-            title:"Customizable avatars",
-            text:"Update your Moonbird’s appearance based on your wallet’s holdings or achievements within the PROOF ecosystem."
+            title:"Revshare",
         },
+        {
+            title:"Community",
+        },
+        {
+            title:"Whitelist, presales and airdrops",
+        },
+        
     ]
 
     return(
