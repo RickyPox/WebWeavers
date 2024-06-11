@@ -1,18 +1,67 @@
 import SectionTitle from "./sectionTitle";
 
 export default function WhoWeAre(){
+
+    const team = [
+        {
+            role:"Founder",
+            handle:"@modsiw",
+            img:"/Founder.png",
+        },
+        {
+            role:"Board",
+            handle:"@Theude_sol",
+            img:"/Board.png",
+        },
+        {
+            role:"Borad",
+            handle:"@mrdutchgolfer",
+            img:"/Board2.png",
+        },
+        {
+            role:"Community Lead",
+            handle:"@Cryptohalo1",
+            img:"/CommunityLead.png",
+        },
+        {
+            role:"Operations",
+            handle:"@DeBenje",
+            img:"/Operations.png",
+        },
+        {
+            role:"Communications",
+            handle:"@Ukkometa",
+            img:"/Communications.png",
+        },
+        {
+            role:"Moderation",
+            handle:"@itsmePampaa",
+            img:"/Moderation.png",
+        },
+        {
+            role:"Moderation",
+            handle:"@nikolaynft",
+            img:"/Moderation2.png",
+        },
+
+
+    ]
+
     return(
         <div className="gridLayout">
             <div className="col-span-5 lg:col-span-3 lg:col-start-2">
-                <SectionTitle subtitle="Who We Are" title="WebWeavers" text="Lorem ipsum dolor sit amet consectetur. Diam consectetur urna gravida pretium arcu tincidunt."/>
+                <SectionTitle subtitle="Who We Are" title="WebWeavers"/>
             </div>
-            <div className="mt-[80px] 2xl:m-0 grid grid-cols-6 gap-[10px] sm:gap-[20px] col-span-5 lg:grid-cols-5">
-                <img className="w-full col-start-1 col-span-3 lg:col-start-2 lg:col-span-1" src="/Ungabunga.png"/>
-                <img className="w-full col-start-4 col-span-3 lg:col-start-3 lg:col-span-1" src="/Ungabunga.png"/>
-                <img className="w-full col-start-1 col-span-3 lg:col-start-4 lg:col-span-1" src="/Ungabunga.png"/>
-                <img className="w-full col-start-4 col-span-3 lg:col-start-3 lg:col-span-1" src="/Ungabunga.png"/>
-                <img className="w-full hidden lg:block lg:col-start-2 lg:col-span-1 row-start-2" src="/Ungabunga.png"/>
-                <img className="w-full hidden lg:block lg:col-start-4 lg:col-span-1 row-start-2" src="/Ungabunga.png"/>
+            <div className="mt-[80px] 2xl:m-0 grid md:grid-cols-4 grid-cols-2 gap-[60px] col-span-5 2xl:col-start-3 lg:px-[100px] px-[20px] 2xl:px-0 team-container">
+                {team.map((team, index) => (
+                    <div key={index} className="team-wrap">
+                        <div className="flex flex-col items-center gap-[10px] team">
+                            <img className="team-img rounded-[10px]" src={team.img}/>
+                            <p className="team-text">{team.role}</p>
+                            <p className="team-text">{team.handle}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     )

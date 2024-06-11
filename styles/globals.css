@@ -79,6 +79,32 @@ p{
   text-align: center;
 }
 
+.team-wrap:hover .team-text{
+  color:#FFCF47;
+  transition: all 0.25s;
+}
+
+.team-text{
+  transition: all 0.25s;
+}
+
+.team-container:hover > .team-wrap:not(:hover){
+  opacity: 0.5;
+  transition: all 0.25s;
+}
+
+.team-wrap{
+  transition: all 0.25s;
+}
+
+.team-img{
+  transition: all 0.25s;
+}
+
+.glow{
+  text-shadow: 10px 0px 10px #FFCF47, -10px 0px 10px #FFCF47, 0px 10px 10px #FFCF47, 0px -10px 10px #FFCF47 ;
+}
+
 .gridLayout{
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
