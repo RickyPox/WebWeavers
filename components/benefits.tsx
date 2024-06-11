@@ -66,10 +66,10 @@ export default function Benefits(){
     return(
         <div className="gridLayout relative">
             <div className="col-span-5 lg:col-span-3 lg:col-start-2 2xl:col-span-6 2xl:col-start-2">
-                <SectionTitle subtitle="Exclusive" title="Holder Benefits"/>
+                <SectionTitle subtitle="Exclusive" title="Holder Benefits" />
             </div>
             {/* DESKTOP */}
-            <div className="col-start-1 col-span-5 2xl:col-span-9 2xl:grid 2xl:grid-cols-3 hidden items-center 2xl:gap-[25px] gap-[60px]">
+            <div className="col-start-2 col-span-6 2xl:flex flex-wrap hidden items-center gap-[25px] mt-[100px]">
                 {benefits.map((benefit, index) => (
                     <div key={index} className="flex" onMouseEnter={() => handleHoveredIndex(index)} onMouseLeave={() => handleHoveredIndex(null)} >
                         <div className=" bg-[#101010] px-[45px] py-[25px] rounded-[10px] flex items-center justify-center gap-[15px]">
