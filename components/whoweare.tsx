@@ -14,7 +14,7 @@ export default function WhoWeAre(){
             img:"/Board.png",
         },
         {
-            role:"Borad",
+            role:"Board",
             handle:"@mrdutchgolfer",
             img:"/Board2.png",
         },
