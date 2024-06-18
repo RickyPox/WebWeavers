@@ -79,7 +79,7 @@ export default function Navbar(){
                         {navigation.map((item, index)=>(
                             <div key={index}>
                                 <Link href={item.href}>
-                                    <h1 className="text-[#FFCF47] ">{item.title}</h1>
+                                    <h1 onClick={toggleMenu} className="text-[#FFCF47] ">{item.title}</h1>
                                 </Link>
                             </div>
                         ))}
